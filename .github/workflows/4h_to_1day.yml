@@ -27,4 +27,4 @@ jobs:
         env:
           FOUR_HOUR_WEBHOOK: ${{ secrets.FOUR_HOUR_WEBHOOK }}
           ONE_DAY_WEBHOOK: ${{ secrets.ONE_DAY_WEBHOOK }}
-        run: python Alert.py
+        run: python 4hour_1day.py
