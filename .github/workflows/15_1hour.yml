@@ -1,4 +1,4 @@
-
+name: Every 30 mins Job
 
 on:
   schedule:
