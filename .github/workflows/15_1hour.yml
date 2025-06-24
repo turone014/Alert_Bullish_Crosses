@@ -5,6 +5,10 @@ on:
     - cron: '0/30 * * * *'  # every 30mins
   workflow_dispatch:      # allows manual triggering
 
+concurrency:
+  group: ${{ github.workflow }}  # 👈 Ensures uniqueness automatically
+  cancel-in-progress: true
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
